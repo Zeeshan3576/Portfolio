@@ -1,12 +1,10 @@
-import { lazy, Suspense } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 import TitleHeader from "../components/TitleHeader";
+import TechIconCardExperience from "../components/models/tech_logos/TechIconCardExperience";
 import { techStackIcons } from "../constants";
 // import { techStackImgs } from "../constants";
-
-const TechIconCardExperience = lazy(() => import("../components/models/tech_logos/TechIconCardExperience"));
 
 const TechStack = () => {
   // Animate the tech cards in the skills section
@@ -61,9 +59,7 @@ const TechStack = () => {
                 {/* The tech-icon-wrapper div contains the TechIconCardExperience component, 
                     which renders the 3D model of the tech stack icon. */}
                 <div className="tech-icon-wrapper">
-                  <Suspense fallback={<div className="w-full h-full" aria-busy="true" />}>
-                    <TechIconCardExperience model={techStackIcon} />
-                  </Suspense>
+                  <TechIconCardExperience model={techStackIcon} />
                 </div>
                 {/* The padding-x and w-full classes are used to add horizontal padding to the 
                     text and make it take up the full width of the component. */}
