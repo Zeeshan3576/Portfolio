@@ -64,12 +64,12 @@ const AppShowcase = () => {
               <h2>The E-Commerce Platform</h2>
             </div>
 
-            {/* <div className="project" ref={ycDirectoryRef}>
+            <div className="project" ref={ycDirectoryRef}>
               <div className="image-wrapper bg-[#FFE7EB]">
-                <img src="/images/project3.png" alt="YC Directory App" />
+                <img src="/images/project6.png" alt="YC Directory App" />
               </div>
-              <h2>YC Directory - A Startup Showcase App</h2>
-            </div> */}
+              <h2>Job Tracker - Organize your job hunt with a Kanban board, smart filters, and a clear timeline.</h2>
+            </div>
           </div>
         </div>
       </div>
